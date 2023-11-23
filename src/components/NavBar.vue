@@ -27,6 +27,20 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      showMenu: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
+  },
+};
+</script>
 <style>
 .navbar {
   position: relative;
@@ -214,18 +228,3 @@ button {
   }
 }
 </style>
-
-<script>
-export default {
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.showMenu = !this.showMenu;
-    },
-  },
-};
-</script>
